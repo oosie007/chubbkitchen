@@ -34,9 +34,9 @@ class Footer extends React.Component {
         return (
             <div className="footer" style={footerBackgroundStyle}>
                 <p className="powerby" style={footerTextStyle}>
-                    <Link className="powerby-servicebot" target="_blank" to="http://chubbkitchen.com" style={footerTextStyle}>
+                    {/* <Link className="powerby-servicebot" target="_blank" to="http://chubbkitchen.com" style={footerTextStyle}>
                         Powered by Chubb Kitchen
-                    </Link>
+                    </Link> */}
                 </p>
                 {this.props.services.footerComponent && this.props.services.footerComponent.map((comp, index) => {
                     return (<div key={"footer-" + index}>
