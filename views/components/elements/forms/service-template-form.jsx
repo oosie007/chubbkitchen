@@ -381,14 +381,14 @@ class TemplateForm extends React.Component {
                         <div className="form-level-errors">
                             {!options.stripe_publishable_key &&
                             <Link to="/stripe-settings"><br/><h4 className="form-error" style={{padding:'10px',paddingLeft:'30px'}}>
-                                The Request Of This Service Disabled Until Setup Complete - Click here to complete</h4>
+                                The Request Of This Product Disabled Until Setup Complete - Click here to complete</h4>
                             </Link>}
                             {error && <div className="form-error">{error}</div>}
                         </div>
                         <div className="form-level-warnings"/>
-                        <h3>Service Info</h3>
+                        <h3>Product Info</h3>
                         <Field name="name" type="text"
-                               component={inputField} label="Product / Service Name"
+                               component={inputField} label="Product Name"
                                validate={[required()]}
                         />
                         <Field name="description" type="text"
@@ -435,9 +435,9 @@ class TemplateForm extends React.Component {
                                 <rect x="176" y="120" width="16" height="16"/>
                             </SVGIcons>
                         </div>
-                        <p className="help-block">Enter the basic information about your service. Summary will be
-                            shown to users in the product / service listing pages, such as the home page featured
-                            items. Details will be shown on each individual products / services page.</p>
+                        <p className="help-block">Enter the basic information about your product. Summary will be
+                            shown to users in the product listing pages, such as the home page featured
+                            items. Details will be shown on each individual products page.</p>
                     </div>
                 </div>
                 <div className="row">
@@ -494,11 +494,9 @@ class TemplateForm extends React.Component {
 
                                 {(serviceTypeValue === 'custom') &&
                                 <div>
-                                    <p>Quotes are built for services that are customer specific. If your service is
-                                        priced
-                                        based on the customer's use-case, use this option. Once the quote service has
-                                        been
-                                        requested by the customer, you can add charges to the service at anytime.
+                                    <p>Quotes are built for services that are customer specific. If your product is
+                                        priced based on the customer's use-case, use this option. Once the quote  has
+                                        been requested by the customer, you can add charges to the product at anytime.
                                     </p>
                                 </div>
                                 }
@@ -540,8 +538,8 @@ class TemplateForm extends React.Component {
                                 </div>
                                 <p className="help-block">Setup payment details. This will be how your customers
                                     will be charged. For example, you can setup a recurring charge for your product
-                                    / service by setting Billing Type to Subscription and define how often your
-                                    customer will get charged automatically.</p>
+                                     by setting Billing Type to Subscription and define how often your
+                                    customer will get charged automatically. *Busy adding a Usage Based Option </p>
                             </div>
                         </div>
                     </div>
@@ -595,7 +593,7 @@ class TemplateForm extends React.Component {
                                 </div>
                                 <p className="help-block">Define custom fields. You can collect additional
                                     information from your customers by defining custom fields. Each custom field
-                                    can also be used as "Add-Ons" to your product / services. For example, if
+                                    can also be used as "Add-Ons" to your products. For example, if
                                     you define a custom field for number of rooms to be cleaned, you can set an
                                     additional cost that will be charged toward your customer when they select
                                     the number of rooms to be cleaned.</p>
