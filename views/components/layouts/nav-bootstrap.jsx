@@ -125,17 +125,17 @@ class NavBootstrap extends React.Component {
                         <a href="#" className="dropdown-toggle" ref="dropdownToggle2" data-toggle="dropdown"
                            role="button" aria-haspopup="true" aria-expanded="false" style={style}>Manage<span className="caret"/></a>
                         <ul className="dropdown-menu">
-                            <li><Link to="/manage-catalog/list">Manage Offerings</Link></li>
+                            <li><Link to="/manage-catalog/list">Manage Products</Link></li>
                             <li><Link to="/manage-categories">Manage Categories</Link></li>
-                            <li><Link to="/manage-users">Manage Users</Link></li>
-                            <li><Link to="/manage-subscriptions">Manage Subscriptions</Link></li>
+                            <li><Link to="/manage-users">Manage Customers</Link></li>
+                            <li><Link to="/manage-subscriptions">Manage Policies</Link></li>
                         </ul>
                     </li>
                     <li className="dropdown">
                         <a href="#" className="dropdown-toggle" ref="dropdownToggle3" data-toggle="dropdown"
                            role="button" aria-haspopup="true" aria-expanded="false" style={style}>Settings<span className="caret"/></a>
                         <ul className="dropdown-menu">
-                            <li><Link to="/stripe-settings">Stripe Settings</Link></li>
+                            <li><Link to="/stripe-settings">Payment Settings</Link></li>
                             <li><Link to="/notification-templates">Email Settings</Link></li>
                             <li><Link to="/manage-permission">Permission Settings</Link></li>
                             <li><Link to="/system-settings">System Settings</Link></li>

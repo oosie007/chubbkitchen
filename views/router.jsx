@@ -96,10 +96,10 @@ class AppRouter extends React.Component {
                     <Route name="Dashboard" path="dashboard" component={Dashboard}/>
                     <Route name="Notifications" path="notifications" component={Notifications}/>
                     <Route name="System Settings" path="system-settings" component={SystemSettings}/>
-                    <Route name="Stripe Settings" path="stripe-settings" component={StripeSettings}/>
-                    <Route name="Manage Users" path="manage-users" component={ManageUsers}/>
+                    <Route name="Payment Settings" path="stripe-settings" component={StripeSettings}/>
+                    <Route name="Manage Customers" path="manage-users" component={ManageUsers}/>
                     <Route name="Edit User" path="manage-users/:userId" components={UserEdit}/>
-                    <Route name="Manage Subscriptions" path="manage-subscriptions"
+                    <Route name="Manage Policies" path="manage-subscriptions"
                            component={ManageSubscriptions}/>
                     <Route name="Manage Categories" path="manage-categories" component={ManageCategories}/>
                     <Route name="Manage Permission" path="manage-permission" component={ManagePermission}/>
@@ -107,9 +107,9 @@ class AppRouter extends React.Component {
                            components={ManageNotificationTemplates}/>
                     <Route name="Notification Template" path="notification-templates/:id"
                            component={NotificationTemplateForm}/>
-                    <Route name="Manage Offerings" path="manage-catalog" component={ManageCatalog}>
+                    <Route name="Manage Products" path="manage-catalog" component={ManageCatalog}>
                         <IndexRoute component={ManageCatalogList}/>
-                        <Route name="Manage Offerings" path="list" component={ManageCatalogList}/>
+                        <Route name="Manage Products" path="list" component={ManageCatalogList}/>
                         <Route name="Create Template" path="create" component={ManageCatalogCreate}/>
                         <Route name="Edit Template" path=":templateId" component={ManageCatalogEdit}/>
                         <Route name="Duplicate Template" path=":templateId/duplicate"

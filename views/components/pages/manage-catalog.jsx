@@ -20,7 +20,7 @@ class ManageCatalog extends React.Component {
     }
     render () {
         let pageName = this.props.route.name;
-        let subtitle = 'Create and manage offerings';
+        let subtitle = 'Create and manage products';
         return(
             <Authorizer permissions="can_administrate">
                 <Jumbotron pageName={pageName} subtitle={subtitle}/>

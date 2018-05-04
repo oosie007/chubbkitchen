@@ -20,13 +20,13 @@ class SlideNavLinks extends React.Component {
                 ]},
                 { name: 'Dashboard', url: '/dashboard', permission: ['can_administrate, can_manage'], icon: 'dashboard', hidden: false},
                 { group: 'Manage', permission: ['can_administrate, can_manage'], icon: '', hidden: false, links: [
-                    { name: 'Manage Offerings', url: '/manage-catalog/list', permission: ['can_administrate, can_manage'], icon: 'view_list', hidden: false},
+                    { name: 'Manage Products', url: '/manage-catalog/list', permission: ['can_administrate, can_manage'], icon: 'view_list', hidden: false},
                     { name: 'Manage Categories', url: '/manage-categories', permission: ['can_administrate, can_manage'], icon: 'playlist_add', hidden: false},
-                    { name: 'Manage Users', url: '/manage-users', permission: ['can_administrate, can_manage'], icon: 'people', hidden: false},
-                    { name: 'Manage Subscriptions', url: '/manage-subscriptions', permission: ['can_administrate, can_manage'], icon: 'card_membership', hidden: false},
+                    { name: 'Manage Customers', url: '/manage-users', permission: ['can_administrate, can_manage'], icon: 'people', hidden: false},
+                    { name: 'Manage Policies', url: '/manage-subscriptions', permission: ['can_administrate, can_manage'], icon: 'card_membership', hidden: false},
                 ]},
                 { group: 'Manage System', permission: ['can_administrate, can_manage'], icon: '', hidden: false, links: [
-                    { name: 'Stripe Settings', url: '/stripe-settings', permission: ['can_administrate, can_manage'], icon: 'settings', hidden: false},
+                    { name: 'Payment Settings', url: '/stripe-settings', permission: ['can_administrate, can_manage'], icon: 'settings', hidden: false},
                     { name: 'Email Settings', url: '/notification-templates', permission: ['can_administrate, can_manage'], icon: 'settings', hidden: false},
                     { name: 'Manage Permission', url: '/manage-permission', permission: ['can_administrate, can_manage'], icon: 'fingerprint', hidden: false},
                     { name: 'System Settings', url: '/system-settings', permission: ['can_administrate, can_manage'], icon: 'settings', hidden: false},
