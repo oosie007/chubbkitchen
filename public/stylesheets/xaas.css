@@ -120,7 +120,7 @@ span.btn-link:hover{
     box-shadow: none;
 }
 label, .help-block, .bmd-help{
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
 }
 .has-error .form-control{
